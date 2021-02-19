@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <animation-list    xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@drawable/gradient_200_to_300"
-        android:duration="500"/>
+        android:duration="@integer/shimmeringDelay"/>
     <item android:drawable="@drawable/gradient_300_to_200"
-        android:duration="500"/>
+        android:duration="@integer/shimmeringDelay"/>
 </animation-list>

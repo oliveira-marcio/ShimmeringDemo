@@ -30,8 +30,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun startAnimation(view: View) {
         val animationDrawable = view.background as AnimationDrawable
-        animationDrawable.setEnterFadeDuration(500)
-        animationDrawable.setExitFadeDuration(500)
-        animationDrawable.start()
+        with(animationDrawable) {
+            setEnterFadeDuration(resources.getInteger(R.integer.shimmeringDelay))
+            setExitFadeDuration(resources.getInteger(R.integer.shimmeringDelay))
+            start()
+        }
     }
 }

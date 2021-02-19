@@ -10,6 +10,4 @@
         android:endColor="@color/gray200">
     </gradient>
 
-    <solid
-        android:color="@color/gray200"/>
 </shape>
