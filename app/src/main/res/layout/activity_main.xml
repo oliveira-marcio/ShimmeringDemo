@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/ovalShimmeringView1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/oval_shimmering_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ovalShimmeringView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/oval_shimmering_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ovalShimmeringView1" />
+
+    <TextView
+        android:id="@+id/ovalShimmeringView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/oval_shimmering_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ovalShimmeringView2" />
+
+    <TextView
+        android:id="@+id/shimmeringView1"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/shimmering_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ovalShimmeringView1"
+        app:layout_constraintTop_toTopOf="@+id/ovalShimmeringView1" />
+
+    <TextView
+        android:id="@+id/shimmeringView2"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:background="@drawable/shimmering_background"
+        app:layout_constraintBottom_toBottomOf="@+id/ovalShimmeringView1"
+        app:layout_constraintEnd_toEndOf="@+id/shimmeringView1"
+        app:layout_constraintStart_toStartOf="@+id/shimmeringView1" />
+
+    <TextView
+        android:id="@+id/shimmeringView3"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/shimmering_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ovalShimmeringView2"
+        app:layout_constraintTop_toTopOf="@+id/ovalShimmeringView2" />
+
+    <TextView
+        android:id="@+id/shimmeringView4"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:background="@drawable/shimmering_background"
+        app:layout_constraintBottom_toBottomOf="@+id/ovalShimmeringView2"
+        app:layout_constraintEnd_toEndOf="@+id/shimmeringView3"
+        app:layout_constraintStart_toStartOf="@+id/shimmeringView3" />
+
+    <TextView
+        android:id="@+id/shimmeringView5"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/shimmering_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ovalShimmeringView3"
+        app:layout_constraintTop_toTopOf="@+id/ovalShimmeringView3" />
+
+    <TextView
+        android:id="@+id/shimmeringView6"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:background="@drawable/shimmering_background"
+        app:layout_constraintBottom_toBottomOf="@+id/ovalShimmeringView3"
+        app:layout_constraintEnd_toEndOf="@+id/shimmeringView5"
+        app:layout_constraintStart_toStartOf="@+id/shimmeringView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
